@@ -1,11 +1,97 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F3F3F3;
+    background-color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .row {
     padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.row label {
+    font-size: 1.2rem;
+}
+
+.row input {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    background-color: #595959;
+}
+
+.row input:hover,
+.row input:active,
+.row input:focus {
+    border: 1px solid #A6A6A6;
+    background-color: #3b3b3b;
+}
+
+.btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #348899;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+
+.btn-danger {
+    background-color: #962D3E;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: #296b79;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #802534;
+}
+
+.save-btn {
+    margin-top: 2rem;
+}
+
+.removeRow {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: .5rem;
+    position: relative;
+}
+
+.removeRow::after {
+    content: "";
+    width: 1rem;
+    height: .2rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .25rem;
 }
 
 .find {
-    margin-right: 10px;
-}
-
-button {
-    border-radius: 5px
+    margin-right: 1rem;
 }

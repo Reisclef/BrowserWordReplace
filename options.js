@@ -53,7 +53,7 @@ function insertRow(entry) {
     html.innerHTML = [
         '<label>Find:</label><input class="find" placeholder="Text to Find..." value="' + entry[0] + '"/>',
         '<label>Replace with:</label><input class="replace" placeholder="Replace found text with..." value="' + entry[1] +'"/>',
-        '<button class="removeRow"">-</button>'].join("\n");
+        '<button class="btn btn-danger removeRow""></button>'].join("\n");
     var lastDiv = document.getElementById("rowContainer").lastChild;
     lastDiv.parentNode.insertBefore(html,lastDiv);
 
