@@ -1,4 +1,4 @@
-# BrowserTextReplace
+# BrowserWordReplace
 
 For anyone who wants a lighter kind of newsreading.
 

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "BrowserWordReplace",
   "version": "1.0",
   "description": "An open source extension to replace chosen words in a browser. Open sourced for transparency at https://github.com/Reisclef/BrowserWordReplace.",
